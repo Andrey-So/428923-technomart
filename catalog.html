@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт - каталог</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-top-menu">
+        <div class="top-menu-logo"><a href="index.html">Техномарт</a></div>
+        <input class="top-menu-search" type="text" placeholder="Поиск:">
+        <a class="top-menu-bookmarks" href="#">Закладки: 0</a>
+        <a class="top-menu-basket" href="#">Корзина: 10</a>
+        <a class="top-menu-checkout" href="#">Оформить заказ</a>
+      </div>
+      <div class="header-middle-menu">
+        <p class="middle-menu-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <a class="middle-menu-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <address class="middle-menu-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <a class="user-link">Равшан Джамшутович</a>
+        <a class="orders-link" href="#">Мои заказы</a>
+        <a class="cabinet-link" href="#">Личный кабинет</a>
+      </div>
+      <ul class="header-bottom-menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Спецпредложения</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <ul class="breadcrumbs">
+        <li class="crumb"><a href="#">Каталог</a></li>
+        <li class="crumb"><a href="#">Инструмент</a></li>
+        <li class="crumb"><a href="#">Перфораторы</a></li>
+      </ul>
+      <h1>Перфораторы</h1>
+      <form class="filter">
+        <h2 class="filter-description">Фильтр:</h2>
+        <section class="filter-price">
+          <h3 class="filter-price__dsc">Цена:</h3>
+          <input class="filter-price__rng" type="range" min="0" max="30000">
+          <input class="filter-price__hld" type="text" placeholder="0">
+          <label class="filter-price__lbl">-</label>
+          <input class="filter-price__hld" type="text" placeholder="30000">
+        </section>
+        <section class="filter-manufacturer">
+          <h3 class="filter-manufacturer__dsc">Производители:</h3>
+          <input class="manufacturer__chk" type="checkbox" checked>
+          <label class="manufacturer__lbl">Bosch</label>
+          <input class="manufacturer__chk" type="checkbox">
+          <label class="manufacturer__lbl">Интерскол</label>
+          <input class="maunfacturer__chk" type="checkbox" checked>
+          <label class="manufacturer__lbl">Makita</label>
+          <input class="manufacturer__chk" type="checkbox">
+          <label class="manufacturer__lbl">Dewalt</label>
+          <input class="manufacturer__chk" type="checkbox">
+          <label class="manufacturer__lbl">Hitachi</label>
+        </section>
+        <section class="filter-power">
+          <h3 class="filter-power__dsc">Питание:</h3>
+          <input class="power__rad" type="radio" checked name="power" value="battery">
+          <label class="power__lbl">Аккумуляторные</label>
+          <input class="power__rad" type="radio" name="power" value="power">
+          <label class="power__lbl">Сетевые</label>
+        </section>
+        <button class="filter-button" type="button">Показать</button>
+        <section class="sorting">
+          <h2 class="sorting-description">Сортировка:</h2>
+          <ul class="sorting-values">
+            <li class="sorting-value">
+              <a class="sorting-link" href="#">По цене</a>
+            </li>
+            <li class="sorting-value">
+              <a class="sorting-link">По типу</a>
+            </li>
+            <li class="sorting-value">
+              <a class="sorting-link">По функционалу</a>
+            </li>
+          </ul>
+          <ul class="sorting-sequences">
+            <li class="sorting-sequence"><a href="#"></a></li>
+            <li class="sorting-sequence"><a href="#"></a></li>
+          </ul>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
