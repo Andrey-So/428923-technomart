@@ -35,45 +35,61 @@
         </nav>
       </header>
       <main class="container">
-        <ul class="main-banners">
-          <li class="banner-item">
-            <h3 class="banner-item__hdr">Материалы</h3>
-            <img class="banner-item__img" src="#">
-            <button class="banner-item__btn" type="button">На любой вкус</button>
-          </li>
-          <li class="banner-item">
-            <h3 class="banner-item__hdr">Инструмент</h3>
-            <img class="banner-item__img" src="#">
-            <button class="banner-item__btn" type="button">На все случаи жизни</button>
-          </li>
-          <li class="banner-item">
-            <h3 class="banner-item__hdr">Техника</h3>
-            <img class="banner-item__img" src="#">
-            <button class="banner-item__btn" type="button">Для стройки</button>
-          </li>
-          <li class="banner-item">
-            <h3 class="banner-item__hdr">Скидки 50%</h3>
-            <img class="banner-item__img" src="#">
-            <button class="banner-item__btn" type="button">На 350 товаров</button>
-          </li>
-          <li class="banner-item">
-            <h3 class="banner-item__hdr">Доставка</h3>
-            <img class="banner-item__img" src="#">
-            <button class="banner-item__btn" type="button">Бесплатно</button>
-          </li>
-        </ul>
-        <ul class="main-sliders">
-          <li class="slider-item">
-            <h3 class="slider-item__hdr">Перфораторы</h3>
-            <p class="slider_item__txt">Настоящие мужские игрушки</p>
-            <button class="slider-item__btn" type="button">Открыть каталог</button>
-          </li>
-          <li class="slider-item">
-            <h3 class="slider-item__hdr">Дрели</h3>
-            <p class="slider-item_txt">Соседям на радость!</p>
-            <button class="slider-item__btn" type="button">Открыть каталог</button>
-          </li>
-        </ul>
+        <div class="only-banners">
+          <ul class="horizontal-banners">
+            <li class="banner-item">
+              <h3 class="banner-item__hdr">Материалы</h3>
+              <img class="banner-item__img" src="#">
+              <button class="banner-item__btn" type="button">На любой вкус</button>
+            </li>
+            <li class="banner-item">
+              <h3 class="banner-item__hdr">Инструмент</h3>
+              <img class="banner-item__img" src="#">
+              <button class="banner-item__btn" type="button">На все случаи жизни</button>
+            </li>
+            <li class="banner-item">
+              <h3 class="banner-item__hdr">Техника</h3>
+              <img class="banner-item__img" src="#">
+              <button class="banner-item__btn" type="button">Для стройки</button>
+            </li>
+          </ul>
+          <div class="slider-and-banners">
+            <section class="sliders">
+              <div class="slider-items">
+                <div class="slider-item">
+                  <h3 class="slider-item__hdr">Перфораторы</h3>
+                  <p class="slider-item__txt">Настоящие мужские игрушки</p>
+                  <img src="#">
+                </div>
+                <div class="slider-item">
+                  <h3 class="slider-item__hdr">Дрели</h3>
+                  <p class="slider-item__txt">Соседям на радость</p>
+                  <img src="#">
+                </div>
+              </div>
+              <div class="slider-nav">
+                <button type="button" class="slider-nav__btn">Перейти к слайду №1</button>
+                <button type="button" class="slider-nav__btn">Перейти к слайду №2</button>
+              </div>
+              <div class="slider-arrows">
+                <button type="button" class="slider-nav-arrow slider-nav-arrow-prew">Назад</button>
+                <button type="button" class="slider-nav-arrow slider-nav-arrow-next">Вперед</button>
+              </div>
+            </section>
+            <ul class="vertical-banners">
+              <li class="banner-item">
+                <h3 class="banner-item__hdr">Скидки 50%</h3>
+                <img class="banner-item__img" src="#">
+                <button class="banner-item__btn" type="button">На 350 товаров</button>
+              </li>
+              <li class="banner-item">
+                <h3 class="banner-item__hdr">Доставка</h3>
+                <img class="banner-item__img" src="#">
+                <button class="banner-item__btn" type="button">Бесплатно</button>
+              </li>
+            </ul>
+          </section>
+          </div>
         <section class="main-popular">
           <div class="items-title">
             <h2>Популярные товары:</h2>
@@ -136,15 +152,9 @@
           </div>
           <div class="service-menu">
             <ul>
-              <li>
-                <a href="#">Доставка</a>
-              </li>
-              <li>
-                <a href="#">Гарантия</a>
-              </li>
-              <li>
-                <a href="#">Кредит</a>
-              </li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
             </ul>
           </div>
           <div class="services-banner">
