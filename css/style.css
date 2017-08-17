@@ -1,11 +1,17 @@
 body {
-
+  font-family: "Cuprum", sans-serif;
+  color: black;
+  font-weight: normal;
+  line-height: inherit;
 }
 
-h2 {
-
+.top-menu-logo {
+  font-size: 24 px;
+  line-height: 1;
+  /*color: #ffffff;*/
 }
-
-h3 {
-
+.heading-popular {
+  font-size: 30 px;
+  line-height: 1;
+  color: #32425c;
 }
