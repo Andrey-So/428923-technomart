@@ -22,7 +22,7 @@
         <a class="cabinet-link" href="#">Личный кабинет</a>
       </div>
       <ul class="header-bottom-menu">
-        <li><a href="#">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Новости</a></li>
@@ -33,47 +33,62 @@
     </header>
     <main class="container">
       <ul class="breadcrumbs">
+        <li class="crumb"><a href="index.html"></a></li>
         <li class="crumb"><a href="#">Каталог</a></li>
         <li class="crumb"><a href="#">Инструмент</a></li>
-        <li class="crumb"><a href="#">Перфораторы</a></li>
+        <li class="crumb-current">Перфораторы</li>
       </ul>
+      <section class="filters">
       <h1>Перфораторы</h1>
-      <form class="filter">
-        <h2 class="filter-description">Фильтр:</h2>
-        <section class="filter-price">
-          <h3 class="filter-price__dsc">Цена:</h3>
-          <input class="filter-price__rng" type="range" min="0" max="30000">
-          <input class="filter-price__hld" type="text" placeholder="0">
-          <label class="filter-price__lbl">-</label>
-          <input class="filter-price__hld" type="text" placeholder="30000">
-        </section>
-        <section class="filter-manufacturer">
-          <h3 class="filter-manufacturer__dsc">Производители:</h3>
-          <input class="manufacturer__chk" type="checkbox" checked>
-          <label class="manufacturer__lbl">Bosch</label>
-          <input class="manufacturer__chk" type="checkbox">
-          <label class="manufacturer__lbl">Интерскол</label>
-          <input class="maunfacturer__chk" type="checkbox" checked>
-          <label class="manufacturer__lbl">Makita</label>
-          <input class="manufacturer__chk" type="checkbox">
-          <label class="manufacturer__lbl">Dewalt</label>
-          <input class="manufacturer__chk" type="checkbox">
-          <label class="manufacturer__lbl">Hitachi</label>
-        </section>
-        <section class="filter-power">
-          <h3 class="filter-power__dsc">Питание:</h3>
-          <input class="power__rad" type="radio" checked name="power" value="battery">
-          <label class="power__lbl">Аккумуляторные</label>
-          <input class="power__rad" type="radio" name="power" value="power">
-          <label class="power__lbl">Сетевые</label>
-        </section>
-        <button class="filter-button" type="button">Показать</button>
-      </form>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <h2 class="filter-description">Фильтр:</h2>
+          <fieldset class="filter-price">
+            <legend class="filter-price__legend">Цена:</legend>
+            <input class="filter-price__range" type="range" min="0" max="30000">
+            <input class="filter-price__text" type="text" placeholder="0">
+            <label class="filter-price__label">-</label>
+            <input class="filter-price__text" type="text" placeholder="30000">
+          </fieldset>
+          <fieldset class="filter-manufacturer">
+            <legend class="filter-manufacturer__dsc">Производители:</legend>
+            <ul>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" checked>
+                Bosch
+              </li>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox">
+                Интерскол
+              </li>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" checked>
+                Makita
+              </li>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox">
+                Dewalt
+              </li>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox">
+                Hitachi
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-power">
+            <h3 class="filter-power__dsc">Питание:</h3>
+            <input class="power__rad" type="radio" checked name="power" value="battery">
+            <label class="power__lbl">Аккумуляторные</label>
+            <input class="power__rad" type="radio" name="power" value="power">
+            <label class="power__lbl">Сетевые</label>
+          </fieldset>
+          <button class="filter-button" type="button">Показать</button>
+        </form>
+      </section>
       <section class="sorting">
         <h2 class="sorting-description">Сортировка:</h2>
         <ul class="sorting-values">
-          <li class="sorting-value">
-            <a class="sorting-link" href="#">По цене</a>
+          <li class="sorting-value sorting-value-current">
+            <a class="sorting-link">По цене</a>
           </li>
           <li class="sorting-value">
             <a class="sorting-link" href="#">По типу</a>
@@ -83,7 +98,7 @@
           </li>
         </ul>
         <ul class="sorting-sequences">
-          <li class="sorting-sequence"><a href="#"></a></li>
+          <li class="sorting-sequence sorting-sequence-current"><a></a></li>
           <li class="sorting-sequence"><a href="#"></a></li>
         </ul>
       </section>
@@ -183,10 +198,10 @@
         </ul>
       </section>
       <div class="paginator">
-        <button class="page__btn" type="button">1</button>
-        <button class="page__btn" type="button">2</button>
-        <button class="page__btn" type="button">3</button>
-        <button class="next__btn" type="button">Следующая</button>
+        <a class="page__link" href="#">1</a>
+        <a class="page__link" href="#">2</a>
+        <a class="page__link" href="#">3</a>
+        <a class="page__link" href="#">Следующая</a>
       </div>
       <section class="informer">
         <h2 class="informer__dsc">Пара слов о перфораторах</h2>
@@ -196,7 +211,7 @@
       </section>
     </main>
     <footer class="top-footer">
-      <nav class="footer-logo">Техномарт</nav>
+      <nav class="footer-logo"><a href="index.html">Техномарт</a></nav>
       <div class="footer-contacts">
         <a class="footer-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <address class="footer-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -231,7 +246,7 @@
       </div>
       <div class="copyright">
         <p>Разработано &ndash;</p>
-        <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
     </footer>
   </body>
