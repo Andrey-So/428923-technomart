@@ -9,6 +9,17 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
 .main-header,
 .service {
   background-color: #f3f7f8;
@@ -303,14 +314,16 @@ a {
   opacity: 0.3;
 }
 
-.heading-service {
+.heading-service,
+.informer__dsc {
   font-size: 30;
   text-transform: uppercase;
   color: #000000;
 }
 
 .service-slogan p,
-.banner p {
+.banner p,
+.informer p {
   font-family: "PTSans", sans-serif;
   font-size: 13px;
 }
@@ -427,4 +440,105 @@ a {
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.crumb {
+  font-family: "PTSans", sans-serif;
+  font-size: 13px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.crumb a {
+  color: #000000;
+}
+
+.filters h1 {
+  background-color: #f2f6f8;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.filter-description,
+.sorting,
+.sorting-description {
+  background-color: #f7f3ec;
+  font-family: "PTSans", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.filter__legend {
+  font-family: "PTSans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.manufacturer__list,
+.power__lbl {
+  font-family: "PTSans", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  font-family: "PTSans", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.sorting-link {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted red;
+}
+
+.sorting-value-current a {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.page_active__link {
+  background-color: #ee3643;
+  font-family: "PTSans", sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.page__link {
+  border: solid 1px #e5e5e5;
+  font-family: "PTSans", sans-serif;
+  font-size: 13px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.informer {
+  background-color: #f2f6f8;
+}
+
+.added-to-card label {
+  font-size: 30px;
+  color: #000000;
+}
+
+.added-to-card .checkout {
+  border: none;
+  background-color: #ee3643;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.added-to-card .continue {
+  border: none;
+  background-color: #ffffff;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
 }

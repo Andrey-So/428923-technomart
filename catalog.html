@@ -43,21 +43,21 @@
         <li class="crumb"><a href="index.html"></a></li>
         <li class="crumb"><a href="#">Каталог</a></li>
         <li class="crumb"><a href="#">Инструмент</a></li>
-        <li class="crumb-current">Перфораторы</li>
+        <li class="crumb crumb-current">Перфораторы</li>
       </ul>
       <section class="filters">
       <h1>Перфораторы</h1>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <h2 class="filter-description">Фильтр:</h2>
           <fieldset class="filter-price">
-            <legend class="filter-price__legend">Цена:</legend>
+            <legend class="filter__legend">Цена:</legend>
             <input class="filter-price__range" type="range" min="0" max="30000">
             <input class="filter-price__text" type="text" placeholder="0">
             <label class="filter-price__label">-</label>
             <input class="filter-price__text" type="text" placeholder="30000">
           </fieldset>
           <fieldset class="filter-manufacturer">
-            <legend class="filter-manufacturer__dsc">Производители:</legend>
+            <legend class="filter__legend">Производители:</legend>
             <ul>
               <li class="manufacturer__list">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" checked>
@@ -82,7 +82,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-power">
-            <h3 class="filter-power__dsc">Питание:</h3>
+            <legend class="filter__legend">Питание:</legend>
             <input class="power__rad" type="radio" checked name="power" value="battery">
             <label class="power__lbl">Аккумуляторные</label>
             <input class="power__rad" type="radio" name="power" value="power">
@@ -205,7 +205,7 @@
         </ul>
       </section>
       <div class="paginator">
-        <a class="page__link" href="#">1</a>
+        <a class="page_active__link" href="#">1</a>
         <a class="page__link" href="#">2</a>
         <a class="page__link" href="#">3</a>
         <a class="page__link" href="#">Следующая</a>
@@ -218,10 +218,10 @@
       </section>
     </main>
     <footer class="top-footer">
-      <nav class="footer-logo"><a href="index.html">Техномарт</a></nav>
+      <a class="footer-logo" href="index.html">Техномарт</a>
       <div class="footer-contacts">
-        <a class="footer-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <address class="footer-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <p class="footer-contacts-phone">+7 (812) 555-05-55</p>
       </div>
       <div class="footer-menu">
         <ul>
@@ -256,5 +256,11 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
     </footer>
+    <form class="added-to-card">
+      <button type="button">Закрыть</button>
+      <label>Товар добавлен в корзину!</label>
+      <button class="checkout" type="button">Оформить заказ</button>
+      <button class="continue" type="button">Продолжить покупки</button>
+    </form>
   </body>
 </html>
