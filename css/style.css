@@ -40,10 +40,6 @@ a {
   background-color: #33445a;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 .top-menu-logo:hover {
   background-color: #ca2c37;
 }
@@ -60,6 +56,10 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.top-menu-order:hover {
+  background-color: #5fbb2d;
+}
+
 .top-menu-order:active {
   color: rgba(255, 255, 255, 0.51);
 }
@@ -70,11 +70,6 @@ a {
   color: #000000;
 }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d110a8e5c065bc8ccdd8bb2071863c25ff114c3c
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 .top-menu-order {
   background-color: #6db254;
 }
@@ -119,10 +114,6 @@ a {
   background-color: #ffffff;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 .user-menu__btn:hover {
   color: #ee3643;
 }
@@ -131,34 +122,16 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d110a8e5c065bc8ccdd8bb2071863c25ff114c3c
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 .header-bottom-menu,
 .top-footer  {
   background-color: #3d546e;
 }
 
-<<<<<<< HEAD
 .header-bottom-menu a {
-=======
-<<<<<<< HEAD
-.header-bottom-menu a {
-=======
-.header-bottom-menu a
-{
->>>>>>> d110a8e5c065bc8ccdd8bb2071863c25ff114c3c
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
   font-size: 17px;
   color: #ffffff;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 .header-bottom-menu a:hover {
   background-color: #293449;
 }
@@ -168,11 +141,6 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d110a8e5c065bc8ccdd8bb2071863c25ff114c3c
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 .horizontal-banners .banner-item:first-child {
   background-color: #ffbf47;
 }
@@ -185,41 +153,7 @@ a {
   background-color: #dc91d8;
 }
 
-<<<<<<< HEAD
 .banner-item__hdr {
-=======
-<<<<<<< HEAD
-.banner-item__hdr {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.banner-item__btn {
-  background-color: rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.banner-item__btn:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.banner-item__btn:active {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.slider-item__hdr {
-  font-size: 36px;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-=======
-.banner-item .banner-item__hdr {
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
   font-size: 24px;
   font-weight: bold;
   color: #ffffff;
@@ -239,10 +173,6 @@ a {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> d110a8e5c065bc8ccdd8bb2071863c25ff114c3c
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 .slider-item__txt {
   font-family: "PTSans", sans-serif;
   font-weight: 400;
@@ -257,10 +187,6 @@ a {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 .main-button:hover {
   background-color: #ca2c37;
 }
@@ -269,11 +195,6 @@ a {
   background-color: #ba2732;
 }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d110a8e5c065bc8ccdd8bb2071863c25ff114c3c
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 .vertical-banners .banner-item:first-child {
   background-color: #8ed78f;
 }
@@ -418,17 +339,8 @@ a {
 .bottom-footer a {
   font-size: 18px;
   color: #ffda96;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 }
 
 .footer-menu a:hover {
   text-decoration: underline;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d110a8e5c065bc8ccdd8bb2071863c25ff114c3c
->>>>>>> 44e031ac6e7fb43d1bd09175d0674855a130ec32
 }
