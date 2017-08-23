@@ -349,6 +349,15 @@ a {
   color: #ffda96;
 }
 
-.footer-menu a:hover {
+.footer-menu a:hover,
+.bottom-footer a:hover {
   text-decoration: underline;
+}
+
+.footer-menu a:active {
+  opacity: 0.5;
+}
+
+.bottom-footer a:active {
+  color: #ee3643;
 }
