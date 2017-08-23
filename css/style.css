@@ -159,11 +159,19 @@ a {
   color: #ffffff;
 }
 
-.banner-item .banner-item__btn {
+.banner-item__btn {
   background-color: rgba(0, 0, 0, 0.1);
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.banner-item__btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.banner-item__btn:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slider-item__hdr {
