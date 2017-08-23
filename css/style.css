@@ -106,6 +106,7 @@ a {
 
 .middle-menu-address {
   font-size: 14px;
+  font-style: normal;
 }
 
 .user-menu__btn {
@@ -120,6 +121,30 @@ a {
 
 .user-menu__btn:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.user-link {
+  font-size: 21px;
+  color: #000000;
+}
+
+.user-link:active {
+  opacity: 0.3;
+}
+
+.login-menu__lnk {
+  font-size: 16px;
+  color: #32425c;
+}
+
+.login-menu__lnk:hover {
+  color: #ee3643;
+  text-decoration: underline;
+}
+
+.login-menu__lnk:active {
+  color: rgba(50, 66, 92, 0.3);
+  text-decoration: underline;
 }
 
 .header-bottom-menu,
@@ -360,4 +385,46 @@ a {
 
 .bottom-footer a:active {
   color: #ee3643;
+}
+
+.popup-write-us label {
+  font-size: 17.5px;
+}
+
+.popup-write-us input::-webkit-input-placeholder,
+.popup-write-us textarea::-webkit-input-placeholder {
+  font-family: "PTSans", sans-serif;
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+.popup-write-us input::-moz-placeholder,
+.popup-write-us textarea::-moz-placeholder { /* Firefox 19+ */
+  font-family: "PTSans", sans-serif;
+  font-size: 14px;
+  color: #a9a9a9;
+  opacity: 1;
+}
+
+.popup-write-us input:-ms-input-placeholder,
+.popup-write-us textarea:-ms-input-placeholder { /* IE 10+ */
+  font-family: "PTSans", sans-serif;
+  font-size: 14px;
+  color: #a9a9a9;
+  background-color: #33445a;
+}
+
+.popup-write-us input:-moz-placeholder,
+.popup-write-us textarea:-moz-placeholder { /* Firefox 18- */
+  font-family: "PTSans", sans-serif;
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+.popup-write-us .send {
+  background-color: #ee3643;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
