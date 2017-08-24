@@ -496,7 +496,12 @@ a {
   border-bottom: 1px dotted red;
 }
 
-.sorting-value-current a {
+.sorting-link:hover {
+  color: #000000;
+  border-bottom: 1px solid red;
+}
+
+.sorting-link-active {
   color: #ee3643;
   border-bottom: none;
 }
@@ -514,6 +519,14 @@ a {
   font-size: 13px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.page__link:hover {
+  border: solid 1px #bdc6ca;
+}
+
+.page__link:active {
+  border: solid 1px #ee3643;
 }
 
 .informer {
