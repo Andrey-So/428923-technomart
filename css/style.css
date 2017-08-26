@@ -5,6 +5,13 @@ body {
   font-family: "Cuprum", sans-serif;
 }
 
+body {
+  /*Временно для сетки*/
+  /*background-image: url("../img/technomart-index.jpg");
+  background-size: 1200px auto;
+  background-repeat: no-repeat;*/
+}
+
 a {
   text-decoration: none;
 }
@@ -25,7 +32,7 @@ a {
   background-color: #f3f7f8;
 }
 
-.header-top-menu,
+.header-top-menu__container,
 .bottom-footer {
   background-color: #33445a;
   color: #ffffff;
@@ -554,4 +561,92 @@ a {
   font-size: 14px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.header-top-menu {
+  background-color: #293449;
+  display: flex;
+}
+
+.header-top-menu__container {
+  display: flex;
+  max-width: 940px;
+  min-height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-menu-logo {
+  margin: 0;
+  width: 220px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.search-form {
+  width: 300px;
+  padding-left: 34px;
+  padding-top: 8px;
+}
+
+.top-menu-bookmarks {
+  width: 150px;
+  padding-top: 11px;
+}
+
+.top-menu-basket {
+  width: 150px;
+  padding-top: 11px;
+}
+
+.top-menu-order {
+  width: 150px;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.header-middle-menu {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.middle-menu-description {
+  width: 196px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 53px;
+  margin-right: 71px;
+}
+
+.middle-menu-contacts {
+  width: 270px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.header-bottom-menu ul {
+  display: flex;
+  width: 940px;
+  min-height: 60px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.header-bottom-menu ul li {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+.only-banners {
+  display: flex;
+  width: 940px;
+}
+
+.only-banners ul {
+  width: 940px;
+  display: flex;
+  list-style-type: none;
 }
