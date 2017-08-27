@@ -566,6 +566,7 @@ a {
 .header-top-menu {
   background-color: #293449;
   display: flex;
+  width: 100%;
 }
 
 .header-top-menu__container {
@@ -629,15 +630,17 @@ a {
 .header-bottom-menu ul {
   display: flex;
   width: 940px;
-  min-height: 60px;
+  /*min-height: 60px;*/
   justify-content: space-around;
   list-style-type: none;
 }
 
-.header-bottom-menu ul li {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
+.header-bottom-menu ul li a {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 60px;
+  padding-top: 25px;
 }
 
 .only-banners {
@@ -645,8 +648,43 @@ a {
   width: 940px;
 }
 
-.only-banners ul {
+.horizontal-banners {
   width: 940px;
   display: flex;
   list-style-type: none;
+}
+
+.horizontal-banners .banner-item {
+  width: 300px;
+  min-height: 125px;
+  margin-right: 20px;
+}
+
+.banner-item__hdr {
+  margin-left: 25px;
+}
+
+.banner-item__btn {
+  display: block;
+  margin-left: 25px;
+  min-height: 28px;
+  width: 140px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.slider-and-banners {
+  display: flex;
+}
+
+.vertical-banners {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.vertical-banners .banner-item:nth-child(2) {
+  width: 300px;
+  min-height: 125px;
+  margin-top: 25px;
 }
