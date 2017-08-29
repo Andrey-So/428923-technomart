@@ -1106,6 +1106,7 @@ a {
   list-style: none;
   padding-left: 0;
 }
+<<<<<<< HEAD
 
 .catalog-item {
   width: 220px;
@@ -1113,3 +1114,5 @@ a {
   margin-right: auto;
   border: 1px solid #e5e5e5;
 }
+=======
+>>>>>>> 47705327b5265f67008c8f50bc443b72bdcd166f
