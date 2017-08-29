@@ -1117,6 +1117,7 @@ a {
 .paginator {
   display: flex;
   margin-left: 20px;
+  margin-bottom: 50px;
 }
 
 .page-button {
@@ -1134,4 +1135,28 @@ a {
   text-align: center;
   width: 124px;
   padding-top: 15px;
+}
+
+.informer__wrapper {
+  width: auto;
+  background-color: #f2f6f8;
+}
+
+.informer {
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.informer__dsc {
+  margin-top: 50px;
+}
+
+.informer p {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
 }
