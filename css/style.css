@@ -27,9 +27,14 @@ a {
 	border: 0;
 }
 
-.main-header,
 .service {
-  background-color: #f3f7f8;
+  background-color: #f3f7f9;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f7f9;
 }
 
 .header-top-menu__container,
@@ -118,11 +123,17 @@ a {
 }
 
 .middle-menu-phone {
+  display: block;
   font-size: 21px;
   color: #fb463c;
+  border: 2px solid #ffffff;
+  width: 270px;
+  min-height: 35px;
+  padding-top: 10px;
 }
 
 .middle-menu-address {
+  margin-top: 5px;
   font-size: 14px;
   font-style: normal;
 }
@@ -131,6 +142,9 @@ a {
   font-size: 21px;
   color: #000000;
   background-color: #ffffff;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .user-menu__btn:hover {
@@ -139,6 +153,15 @@ a {
 
 .user-menu__btn:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu__btn_login {
+  width: 120px;
+  margin-right: 5px;
+}
+
+.user-menu__btn_registry {
+  width: 150px;
 }
 
 .user-link {
@@ -339,9 +362,22 @@ a {
   font-size: 13px;
 }
 
+.service-menu ul {
+  list-style: none;
+  padding-left: 0;
+  width: 240px;
+  min-height: 185px;
+}
+
 .menu-item {
+  display: block;
+  min-height: 40px;
   background-color: #3d546e;
   color: #ffffff;
+  font-size: 21px;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 20px;
 }
 
 .menu-item:hover {
@@ -355,7 +391,14 @@ a {
 
 .service-banner h3 {
   font-size: 36;
+  color: #32425c;
   text-transform: uppercase;
+}
+
+.service-banner p {
+  padding: 0;
+  margin: 0;
+  line-height: 25px;
 }
 
 .about {
@@ -374,6 +417,23 @@ a {
 .about-contacts p {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
+  padding: 0;
+  margin: 0;
+  line-height: 25px;
+  width: 530px;
+}
+
+.about-delivery {
+  margin-top: 20px;
+}
+
+.about-button {
+  display: block;
+  width: 220px;
+  min-height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 3px;
 }
 
 .delivery-company {
@@ -620,18 +680,24 @@ a {
 }
 
 .middle-menu-description {
-  width: 196px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 53px;
-  margin-right: 71px;
+  margin: 0;
+  width: 220px;
+  margin-left: auto;
+  margin-right: 50px;
 }
 
 .middle-menu-contacts {
+  /*display: flex;*/
+  /*flex-direction: column;*/
   width: 270px;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 100px;
   text-align: center;
+}
+
+.user-menu {
+  display: flex;
+  margin-left: auto;
 }
 
 .header-bottom-menu {
@@ -639,6 +705,7 @@ a {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
 }
 
 .header-bottom-menu ul {
@@ -654,8 +721,6 @@ a {
   display: flex;
   padding-left: 10px;
   padding-right: 10px;
-  height: 60px;
-  padding-top: 25px;
 }
 
 /*.container {
@@ -664,6 +729,7 @@ a {
 }*/
 
 .only-banners {
+  margin: 0;
   display: flex;
   width: 940px;
   margin-left: auto;
@@ -671,15 +737,18 @@ a {
 }
 
 .horizontal-banners {
+  margin: 0;
+  margin-top: 40px;
   width: 940px;
   display: flex;
   list-style-type: none;
+  padding-left: 0;
+  justify-content: space-between;
 }
 
 .horizontal-banners .banner-item {
   width: 300px;
   min-height: 125px;
-  margin-right: 20px;
 }
 
 .banner-item__hdr {
@@ -700,18 +769,26 @@ a {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
+  justify-content: space-between;
 }
 
 .vertical-banners {
   display: flex;
+  margin: 0;
+  margin-top: 10px;
   flex-direction: column;
   list-style-type: none;
+  padding-left: 0;
+  min-height: 260px;
+}
+
+.vertical-banners .banner-item {
+  width: 300px;
+  min-height: 125px;
 }
 
 .vertical-banners .banner-item:nth-child(2) {
-  width: 300px;
-  min-height: 125px;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .items-title h2,
@@ -749,6 +826,7 @@ a {
 .popular-brands {
   display: flex;
   width: 940px;
+  padding-left: 0;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
@@ -757,13 +835,159 @@ a {
 }
 
 .brand {
-  display: flex
-  justify-content: center
-  align-items: center
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f8f8f8;
 }
 
 .brand img {
-  /*display: flex;*/
   margin: auto;
   padding: 20px;
+}
+
+.service__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-banners {
+  display: flex;
+  flex-direction: row;
+}
+
+.service-banner {
+  padding-left: 80px;
+}
+
+.about {
+  display: flex;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.about-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.about-contacts p {
+  width: 185px;
+  padding-bottom: 30px;
+}
+
+.contacts-button {
+  width: 300px;
+  min-height: 30px;
+  padding-top: 10px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.top-footer {
+  background-color: #3d546e;
+}
+
+.top-footer__wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  min-height: 195px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-logo {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  min-height: 43px;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+
+.footer-contacts-address {
+  width: 325px;
+  margin-bottom: 5px;
+}
+
+.footer-contacts-phone {
+  color: white;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.footer-menu li:nth-child(even) {
+  padding-top: 50px;
+}
+
+.bottom-footer {
+  display: flex;
+  min-height: 107px;
+}
+
+.bottom-footer__wrapper {
+  display: flex;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyright {
+  margin: auto;
+  margin-left: 0;
+}
+
+.copyright p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  width: 135px;
+  list-style: none;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.social li {
+  margin: auto;
+}
+
+.feedback {
+  margin: auto;
+}
+
+.feedback p {
+  margin: 0;
+}
+
+.development {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-right: 0;
+}
+
+.development p {
+  margin: 0;
 }
