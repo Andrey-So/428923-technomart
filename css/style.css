@@ -1113,3 +1113,25 @@ a {
   margin-right: auto;
   border: 1px solid #e5e5e5;
 }
+
+.paginator {
+  display: flex;
+  margin-left: 20px;
+}
+
+.page-button {
+  width: 40px;
+  min-height: 25px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.page__link {
+  margin-left: 10px;
+}
+
+.page-next-button {
+  text-align: center;
+  width: 124px;
+  padding-top: 15px;
+}
