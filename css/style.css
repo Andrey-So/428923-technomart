@@ -991,6 +991,7 @@ a {
 .development p {
   margin: 0;
 }
+<<<<<<< HEAD
 
 /*Сетка каталога*/
 
@@ -1014,3 +1015,5 @@ a {
   padding-top: 5px;
   text-decoration: underline;
 }
+=======
+>>>>>>> 9f7e5ce79eedb1390ddd49debb21a2c1a79bf662
