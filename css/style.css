@@ -789,6 +789,45 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+<<<<<<< HEAD
+=======
+.header-top-menu {
+  background-color: #293449;
+  display: flex;
+  width: 100%;
+}
+
+.header-middle-menu {
+  display: flex;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.middle-menu-description {
+  margin: 0;
+  width: 220px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.middle-menu-contacts {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  width: 270px;
+  margin-left: auto;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.user-menu {
+  display: flex;
+  margin-left: auto;
+}
+
+>>>>>>> 3a43190e56d4bfa0f14e4149caa7e4ec44df5770
 .header-bottom-menu {
   display: flex;
   width: 940px;
