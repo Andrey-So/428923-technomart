@@ -1,30 +1,30 @@
 body {
+  min-width: 940px;
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum", sans-serif;
-}
-
-body {
-  /*Временно для сетки*/
-  /*background-image: url("../img/technomart-index.jpg");
-  background-size: 1200px auto;
-  background-repeat: no-repeat;*/
 }
 
 a {
   text-decoration: none;
 }
 
-.visually-hidden {
-	position: absolute;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .service {
@@ -43,13 +43,30 @@ a {
   color: #ffffff;
 }
 
-.top-menu-logo,
-.footer-logo {
+.header-top-menu__container {
+  display: flex;
+  max-width: 940px;
+  min-height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
   font-size: 24px;
   font-weight: 400;
+  min-width: 220px;
   text-transform: uppercase;
-  background-color: #ff5357;
+  background-color: #ee3643;
   color: #ffffff;
+  margin: 0;
+  text-align: center;
+  padding-top: 9px;
+  box-shadow: 0 5px 0 0 #b52933;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
 }
 
 .top-menu-search__input,
@@ -60,11 +77,82 @@ a {
   font-size: 17px;
   font-weight: 400;
   color: #ffffff;
-  background-color: #33445a;
+  background-color: #293449;
 }
 
-.top-menu-logo:hover {
-  background-color: #ca2c37;
+.top-menu-search__input {
+  border: none;
+}
+
+.search-form {
+  width: 225px;
+  padding-top: 10px;
+  padding-left: 47px;
+  background-color: #293449;
+  position: relative;
+}
+
+.search-form::before {
+  content: "";
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  left: 17px;
+  top: 12px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.top-menu-bookmarks {
+  width: 132px;
+  padding-top: 11px;
+  padding-left: 17px;
+  position: relative;
+  text-align: center;
+}
+
+.top-menu-bookmarks::before {
+  content: "";
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.top-menu-basket {
+  width: 131px;
+  padding-top: 11px;
+  padding-left: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.top-menu-basket::before {
+  content: "";
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  left: 19px;
+  top: 12px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.top-menu-order {
+  background-color: #63a63e;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding-top: 11px;
 }
 
 .top-menu-search__input:hover,
@@ -91,10 +179,6 @@ a {
 {
   background-color: #ffffff;
   color: #000000;
-}
-
-.top-menu-order {
-  background-color: #6db254;
 }
 
 .top-menu-search__input::-webkit-input-placeholder {
@@ -632,43 +716,6 @@ a {
   background-color: #293449;
   display: flex;
   width: 100%;
-}
-
-.header-top-menu__container {
-  display: flex;
-  max-width: 940px;
-  min-height: 42px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.top-menu-logo {
-  margin: 0;
-  width: 220px;
-  text-align: center;
-  padding-top: 8px;
-}
-
-.search-form {
-  width: 300px;
-  padding-left: 34px;
-  padding-top: 8px;
-}
-
-.top-menu-bookmarks {
-  width: 150px;
-  padding-top: 11px;
-}
-
-.top-menu-basket {
-  width: 150px;
-  padding-top: 11px;
-}
-
-.top-menu-order {
-  width: 150px;
-  text-align: center;
-  padding-top: 11px;
 }
 
 .header-middle-menu {
