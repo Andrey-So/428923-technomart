@@ -549,8 +549,7 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
 }
 
-.items-title h2,
-.brand-title h2 {
+.items-title h2 {
   font-size: 30px;
   font-weight: normal;
   color: #32425c;
@@ -562,14 +561,27 @@ input[type="radio"].visually-hidden {
   margin-left: 28px;
 }
 
+.brand-title h2 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-top: 29px;
+  margin-bottom: 28px;
+  margin-left: 25px;
+}
+
 .popular-items .item {
   font-family: "PT Sans", sans-serif;
 }
 
-.item .item-description {
+.item-description {
   font-size: 18px;
   font-weight: bold;
   color: #000000;
+  text-align: center;
 }
 
 .item-price-old {
@@ -577,6 +589,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: #a9a9a9;
   text-decoration: line-through;
+  text-align: center;
 }
 
 .item-price {
@@ -584,6 +597,8 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   font-weight: bold;
   color: #ffffff;
+  text-align: center;
+  width: 145px;
 }
 
 .item-buy__btn {
@@ -897,68 +912,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-<<<<<<< HEAD
-=======
-.header-bottom-menu {
-  display: flex;
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-}
-
-.header-bottom-menu ul {
-  display: flex;
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-.header-bottom-menu ul li a {
-  display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.only-banners {
-  margin: 0;
-  display: flex;
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.horizontal-banners {
-  margin: 0;
-  margin-top: 40px;
-  width: 940px;
-  display: flex;
-  list-style-type: none;
-  padding-left: 0;
-  justify-content: space-between;
-}
-
-.horizontal-banners .banner-item {
-  width: 300px;
-  min-height: 125px;
-}
-
-.banner-item__hdr {
-  margin-left: 25px;
-}
-
-.banner-item__btn {
-  display: block;
-  margin-left: 25px;
-  min-height: 28px;
-  width: 140px;
-  text-align: center;
-  padding-top: 15px;
-}
-
->>>>>>> cbc424101feaea0ba9e207708fce2929433680ff
 .slider-and-banners {
   display: flex;
   width: 940px;
@@ -984,14 +937,17 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   margin-right: auto;
   list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.item {
+  border: 1px solid #eaeaea;
 }
 
 .price-old-none {
   visibility: hidden;
-}
-
-.item-price {
-  width: 145px;
 }
 
 .popular-brands {
