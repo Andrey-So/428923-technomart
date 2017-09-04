@@ -29,6 +29,7 @@ input[type="radio"].visually-hidden {
 
 .service {
   background-color: #f3f7f9;
+  padding-bottom: 103px;
 }
 
 .main-header {
@@ -43,8 +44,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
-.header-top-menu__container,
-.bottom-footer {
+.header-top-menu__container {
   background-color: #33445a;
   color: #ffffff;
 }
@@ -57,7 +57,7 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
 }
 
-.logo {
+.header-logo {
   font-size: 24px;
   font-weight: 400;
   min-width: 220px;
@@ -666,15 +666,15 @@ input[type="radio"].visually-hidden {
 
 .item:last-child::before {
   content: "";
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: -1px;
   right: -11px;
   background-image: url("../img/new flag.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .item::after {
@@ -779,20 +779,38 @@ input[type="radio"].visually-hidden {
 
 .service-menu ul {
   list-style: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
   width: 240px;
-  min-height: 185px;
+  position: relative;
 }
 
-.menu-item {
+.service-menu ul::after {
+  content: "";
+  width: 468px;
+  height: 261px;
+  position: absolute;
+  top: -45px;
+  left: 230px;
+  background-image: url("../img/service-shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.menu-item:not(.menu-active)  {
   display: block;
   min-height: 40px;
-  background-color: #3d546e;
+  background-color: #32425c;
   color: #ffffff;
   font-size: 21px;
+  font-weight: bold;
   text-align: left;
-  padding-left: 25px;
-  padding-top: 20px;
+  padding-left: 22px;
+  padding-top: 15px;
+  padding-bottom: 3px;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 }
 
 .menu-item:hover {
@@ -800,20 +818,38 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-item.menu-active {
+  display: block;
+  min-height: 40px;
   background-color: #ffffff;
-  color: #000000;
+  color: #32425c;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 22px;
+  padding-top: 16px;
+  padding-bottom: 5px;
 }
 
 .service-banner h3 {
   font-size: 36px;
   color: #32425c;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 1;
 }
 
 .service-banner p {
   padding: 0;
   margin: 0;
-  line-height: 25px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .about {
@@ -823,8 +859,11 @@ input[type="radio"].visually-hidden {
 .about-company h2,
 .about-contacts h2 {
   font-size: 30px;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .about-text p,
@@ -834,26 +873,43 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   padding: 0;
   margin: 0;
-  line-height: 25px;
+  line-height: 24px;
   width: 530px;
 }
 
 .about-delivery {
-  margin-top: 20px;
+  margin-top: 24px;
+}
+
+.list-delivery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 21px;
+  margin-bottom: 36px;
+  padding-left: 37px;
 }
 
 .about-button {
   display: block;
   width: 220px;
-  min-height: 30px;
+  min-height: 26px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 12px;
+  padding-left: 1px;
   border-radius: 3px;
 }
 
 .delivery-company {
   font-size: 18px;
   line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.delivery-company::after {
+  <svg>
+    <rect width="50%" height="100" fill="orange"/>
+  </svg>
 }
 
 .footer-contacts,
@@ -861,6 +917,19 @@ input[type="radio"].visually-hidden {
 .bottom-footer p {
    font-size: 18px;
    color: #f3f7f9;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 400;
+  min-width: 220px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  padding-top: 9px;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .footer-contacts-address {
@@ -1125,10 +1194,23 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
+  position: relative;
 }
 
 .service-banner {
   padding-left: 80px;
+}
+
+.service-delivery::after {
+  content: "";
+  width: 468px;
+  height: 261px;
+  position: absolute;
+  top: 37px;
+  left: 471px;
+  background-image: url("../img/banner-delivery.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .about {
@@ -1136,6 +1218,8 @@ input[type="radio"].visually-hidden {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 53px;
+  margin-bottom: 6px;
   justify-content: space-between;
 }
 
@@ -1147,20 +1231,21 @@ input[type="radio"].visually-hidden {
 
 .about-contacts p {
   width: 185px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
 }
 
 .contacts-button {
-  width: 300px;
-  min-height: 30px;
-  padding-top: 10px;
+  width: 295px;
+  min-height: 26px;
+  padding-top: 12px;
+  padding-left: 5px;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 80px;
 }
 
 .top-footer {
-  background-color: #3d546e;
+  background-color: #32425c;
 }
 
 .top-footer__wrapper {
@@ -1177,19 +1262,25 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   width: 220px;
-  min-height: 43px;
+  font-size: 30px;
+  min-height: 47px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 16px;
   margin-bottom: 30px;
 }
 
 .footer-contacts-address {
   width: 325px;
-  margin-bottom: 5px;
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 3px;
+  padding-bottom: 3px;
 }
 
 .footer-contacts-phone {
   color: white;
+  padding-left: 3px;
 }
 
 .footer-menu {
@@ -1201,12 +1292,15 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-menu li:nth-child(even) {
-  padding-top: 50px;
+  padding-top: 52px;
+  padding-left: -25px;
 }
 
 .bottom-footer {
   display: flex;
   min-height: 107px;
+  background-color: #293449;
+  color: #ffffff;
 }
 
 .bottom-footer__wrapper {
