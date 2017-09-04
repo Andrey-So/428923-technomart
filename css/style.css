@@ -783,6 +783,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin-top: 14px;
   width: 240px;
+<<<<<<< HEAD
   position: relative;
 }
 
@@ -913,10 +914,48 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts,
-.footer-menu li:nth-child(odd) a,
-.bottom-footer p {
+.footer-menu-primary a {
    font-size: 18px;
    color: #f3f7f9;
+}
+
+.footer-menus {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu-secondary a {
+   font-size: 18px;
+   color: #ffda96;
+}
+
+.footer-menu-primary,
+.footer-menu-secondary {
+
+}
+
+.footer-menu-primary {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  justify-content: space-between;
+  width: 549px;
+  padding-top: 40px;
+  margin-left: 64px;
+}
+
+.footer-menu-secondary {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  justify-content: space-between;
+  width: 525px;
+  margin-top: 38px;
+  margin-left: 87px;
 }
 
 .footer-logo {
@@ -934,21 +973,6 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts-address {
   font-style: normal;
-}
-
-.footer-menu li:nth-child(even) a,
-.bottom-footer a {
-  font-size: 18px;
-  color: #ffda96;
-}
-
-.footer-menu a:hover,
-.bottom-footer a:hover {
-  text-decoration: underline;
-}
-
-.footer-menu a:active {
-  opacity: 0.5;
 }
 
 .bottom-footer a:active {
@@ -1253,7 +1277,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   width: 940px;
-  min-height: 195px;
+  min-height: 193px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1281,19 +1305,7 @@ input[type="radio"].visually-hidden {
 .footer-contacts-phone {
   color: white;
   padding-left: 3px;
-}
-
-.footer-menu {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-left: 0;
-  padding-top: 20px;
-}
-
-.footer-menu li:nth-child(even) {
-  padding-top: 52px;
-  padding-left: -25px;
+  font-size: 18px;
 }
 
 .bottom-footer {
@@ -1312,12 +1324,14 @@ input[type="radio"].visually-hidden {
 
 .copyright {
   margin: auto;
-  margin-left: 0;
+  margin-top: 37px;
+  margin-left: 1px;
 }
 
 .copyright p {
   margin: 0;
-  margin-bottom: 5px;
+  /*margin-bottom: 2px;*/
+  font-size: 16px;
 }
 
 .social {
