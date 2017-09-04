@@ -779,20 +779,25 @@ input[type="radio"].visually-hidden {
 
 .service-menu ul {
   list-style: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
   width: 240px;
-  min-height: 185px;
 }
 
-.menu-item {
+.menu-item:not(.menu-active)  {
   display: block;
   min-height: 40px;
-  background-color: #3d546e;
+  background-color: #32425c;
   color: #ffffff;
   font-size: 21px;
+  font-weight: bold;
   text-align: left;
-  padding-left: 25px;
-  padding-top: 20px;
+  padding-left: 21px;
+  padding-top: 15px;
+  padding-bottom: 3px;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 }
 
 .menu-item:hover {
@@ -800,8 +805,16 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-item.menu-active {
+  display: block;
+  min-height: 40px;
   background-color: #ffffff;
-  color: #000000;
+  color: #32425c;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 21px;
+  padding-top: 16px;
+  padding-bottom: 5px;
 }
 
 .service-banner h3 {
