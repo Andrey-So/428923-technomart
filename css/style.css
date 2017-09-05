@@ -797,6 +797,11 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/service-shadow.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1f7e30d469e582a3b2af7116de13d1f75431bc01
+>>>>>>> 870c52984c141f37291cb4fa90f261c862f8fde5
 }
 
 .menu-item:not(.menu-active)  {
@@ -807,7 +812,15 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-weight: bold;
   text-align: left;
+<<<<<<< HEAD
   padding-left: 22px;
+=======
+<<<<<<< HEAD
+  padding-left: 22px;
+=======
+  padding-left: 21px;
+>>>>>>> 1f7e30d469e582a3b2af7116de13d1f75431bc01
+>>>>>>> 870c52984c141f37291cb4fa90f261c862f8fde5
   padding-top: 15px;
   padding-bottom: 3px;
   border-top: 1px solid #405069;
@@ -826,7 +839,15 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-weight: bold;
   text-align: left;
+<<<<<<< HEAD
   padding-left: 22px;
+=======
+<<<<<<< HEAD
+  padding-left: 22px;
+=======
+  padding-left: 21px;
+>>>>>>> 1f7e30d469e582a3b2af7116de13d1f75431bc01
+>>>>>>> 870c52984c141f37291cb4fa90f261c862f8fde5
   padding-top: 16px;
   padding-bottom: 5px;
 }
