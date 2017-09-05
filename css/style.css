@@ -815,19 +815,7 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-weight: bold;
   text-align: left;
-<<<<<<< HEAD
   padding-left: 22px;
-=======
-<<<<<<< HEAD
-  padding-left: 22px;
-=======
-<<<<<<< HEAD
-  padding-left: 22px;
-=======
-  padding-left: 21px;
->>>>>>> 1f7e30d469e582a3b2af7116de13d1f75431bc01
->>>>>>> 870c52984c141f37291cb4fa90f261c862f8fde5
->>>>>>> 5fff5965159d880029544d6f62afe388a8183f4a
   padding-top: 15px;
   padding-bottom: 3px;
   border-top: 1px solid #405069;
@@ -846,19 +834,7 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-weight: bold;
   text-align: left;
-<<<<<<< HEAD
   padding-left: 22px;
-=======
-<<<<<<< HEAD
-  padding-left: 22px;
-=======
-<<<<<<< HEAD
-  padding-left: 22px;
-=======
-  padding-left: 21px;
->>>>>>> 1f7e30d469e582a3b2af7116de13d1f75431bc01
->>>>>>> 870c52984c141f37291cb4fa90f261c862f8fde5
->>>>>>> 5fff5965159d880029544d6f62afe388a8183f4a
   padding-top: 16px;
   padding-bottom: 5px;
 }
@@ -1371,9 +1347,9 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   width: 135px;
   list-style: none;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 118px;
+  margin-top: 20px;
+  padding: 0;
   justify-content: space-between;
 }
 
@@ -1394,23 +1370,51 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
 }
 
+.social-vk {
+  background-image: url("../img/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-position: 7px 12px;
+}
+
+.social-fb {
+  background-image: url("../img/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-position: 14px 9px;
+}
+
+.social-in {
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-position: 9px 9px;
+}
+
 .feedback {
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 37px;
+  margin-right: 52px;
 }
 
 .feedback p {
   margin: 0;
 }
 
+.feedback a,
+.development a {
+  color: #ffd180;
+  text-decoration: none;
+}
+
 .development {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-right: 0;
+  margin-top: 37px;
+  margin-right: 13px;
 }
 
 .development p {
   margin: 0;
+  padding: 0;
 }
 
 /*Сетка каталога*/
