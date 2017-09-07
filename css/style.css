@@ -293,31 +293,16 @@ input[type="radio"].visually-hidden {
   height: 55px;
   background-color: #32425c;
   box-shadow: 0 5px 0 0 #293449;
-}
-
-.header-menu ul {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   justify-content: space-around;
-  align-items: stretch;
-  height: 100%;
 }
 
-.header-menu li {
-  margin: auto;
-  margin-top: 19px;
-  align-items: stretch;
-  display: flex;
+.header-menu__item:first-child {
+  padding-left: 21px;
 }
 
-.header-menu li:first-child {
-  margin-left: 51px;
-}
-
-.header-menu li:last-child {
-  margin-right: 53px;
+.header-menu__item:last-child {
+  padding-right: 23px;
 }
 
 .header-menu__item {
@@ -325,6 +310,9 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   display: flex;
   align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  padding-top: 1px;
 }
 
 .header-menu__item:hover {
@@ -418,6 +406,24 @@ input[type="radio"].visually-hidden {
 
 .banner__btn:active {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner__icon {
+  position: absolute;
+  right: 31px;
+  top: 31px;
+}
+
+.banner__icon_type-materials {
+  right: 43px;
+}
+
+.banner__icon_type-insturment {
+  right: 43px;
+}
+
+.banner__icon_type-sale {
+  right: 43px;
 }
 
 .slider-vertical-banners {
