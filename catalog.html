@@ -16,7 +16,7 @@
             <input class="search__input" type="search" placeholder="Поиск:">
           </form>
           <a class="bookmarks" href="#">Закладки: 0</a>
-          <a class="basket basket-full" href="#">Корзина: 0</a>
+          <a class="basket basket-full" href="#">Корзина: 10</a>
           <a class="order" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -30,8 +30,8 @@
           <div class="header-user-menu">
             <a class="account" href="#">Равшан Джамшутович</a>
             <div class="orders-cabinet">
-              <a class="my-orders" href="#">Мои заказы</a>
-              <a class="personal-cabinet" href="#">Личный кабинет</a>
+              <a class="cabinet-link" href="#">Мои заказы</a>
+              <a class="cabinet-link" href="#">Личный кабинет</a>
             </div>
           </div>
         </div>
@@ -46,5 +46,180 @@
         </nav>
       </div>
     </header>
+    <main class="container">
+      <nav class="breadcrumbs">
+        <a class="breadcrumbs-home__item" href="#"></a>
+        <a class="breadcrumbs__item" href="#">Каталог</a>
+        <a class="breadcrumbs__item" href="#">Инструмент</a>
+        <a class="breadcrumbs__item" href="#">Перфораторы</a>
+      </nav>
+      <section class="page-title">
+        <h1>Перфораторы</h1>
+      </section>
+      <div class="catalog-container">
+      <section class="filter">
+        <h2>Фильтр:</h2>
+        <form class="filter">
+          <fieldset class="filter-price">
+            <legend class="filter__legend">Цена:</legend>
+            <input class="filter-price__range" type="range" min="0" max="30000">
+            <input class="filter-price__text" type="text" placeholder="0">
+            <label class="filter-price__label">-</label>
+            <input class="filter-price__text" type="text" placeholder="30000">
+          </fieldset>
+          <fieldset class="filter-manufacturer">
+            <legend class="filter__legend">Производители:</legend>
+            <ul>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" checked>
+                Bosch
+              </li>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox">
+                Интерскол
+              </li>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" checked>
+                Makita
+              </li>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox">
+                Dewalt
+              </li>
+              <li class="manufacturer__list">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox">
+                Hitachi
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-power">
+            <legend class="filter__legend">Питание:</legend>
+            <input class="power__rad" type="radio" checked name="power" value="battery">
+            <label class="power__lbl">Аккумуляторные</label>
+            <input class="power__rad" type="radio" name="power" value="power">
+            <label class="power__lbl">Сетевые</label>
+          </fieldset>
+          <button class="filter-button" type="button">Показать</button>
+        </form>
+      </section>
+      <div class="sorting-and-catalog">
+<section class="sorting">
+  <h2 class="sorting-description">Сортировка:</h2>
+  <ul class="sorting-values">
+    <li><a class="sorting-link-active">По цене</a></li>
+    <li><a class="sorting-link" href="#">По типу</a></li>
+    <li><a class="sorting-link" href="#">По функционалу</a></li>
+  </ul>
+  <ul class="sorting-sequences">
+    <li class="sorting-sequence sorting-sequence-current"><a>По возрастанию</a></li>
+    <li class="sorting-sequence"><a href="#">По убыванию</a></li>
+  </ul>
+</section>
+<section class="main-catalog">
+  <h2 class="visually-hidden">Каталог</h2>
+  <ul class="all-catalog">
+    <li class="card">
+      <img src="img/drill-3000.png" alt="Перфоратор BOSCH BFG 3000">
+      <h3 class="card-description">Перфоратор BOSCH BFG 3000</h3>
+      <p class="card-price-old">22500 Р.</p>
+      <p class="card-price">15500 Р.</p>
+      <div class="catalog-card-hover">
+        <button class="card-buy__btn" type="button">Купить</button>
+        <button class="card-bookmarks__btn" type="button">В закладки</button>
+      </div>
+    </li>
+    <li class="card">
+      <img src="img/drill-6000.png" alt="Перфоратор BOSCH BFG 6000">
+      <h3 class="card-description">Перфоратор BOSCH BFG 6000</h3>
+      <p class="card-price-old">30500 Р.</p>
+      <p class="card-price">25500 Р.</p>
+      <div class="catalog-card-hover">
+        <button class="card-buy__btn" type="button">Купить</button>
+        <button class="card-bookmarks__btn" type="button">В закладки</button>
+      </div>
+    </li>
+    <li class="card">
+      <img src="img/drill-2000.png" alt="Перфоратор BOSCH BFG 2000">
+      <h3 class="card-description">Перфоратор BOSCH BFG 2000</h3>
+      <p class="card-price-old"></p>
+      <p class="card-price">15500 Р.</p>
+      <div class="catalog-card-hover">
+        <button class="card-buy__btn" type="button">Купить</button>
+        <button class="card-bookmarks__btn" type="button">В закладки</button>
+      </div>
+    </li>
+    <li class="card">
+      <img src="img/drill-3000.png" alt="Перфоратор BOSCH BFG 3000">
+      <h3 class="card-description">Перфоратор BOSCH BFG 3000</h3>
+      <p class="card-price-old">22500 Р.</p>
+      <p class="card-price">15500 Р.</p>
+      <div class="catalog-card-hover">
+        <button class="card-buy__btn" type="button">Купить</button>
+        <button class="card-bookmarks__btn" type="button">В закладки</button>
+      </div>
+    </li>
+    <li class="card">
+      <img src="img/drill-6000.png" alt="Перфоратор BOSCH BFG 6000">
+      <h3 class="card-description">Перфоратор BOSCH BFG 6000</h3>
+      <p class="card-price-old">30500 Р.</p>
+      <p class="card-price">25500 Р.</p>
+      <div class="catalog-card-hover">
+        <button class="card-buy__btn" type="button">Купить</button>
+        <button class="card-bookmarks__btn" type="button">В закладки</button>
+      </div>
+    </li>
+    <li class="card">
+      <img src="img/drill-2000.png" alt="Перфоратор BOSCH BFG 2000">
+      <h3 class="card-description">Перфоратор BOSCH BFG 2000</h3>
+      <p class="card-price-old"></p>
+      <p class="card-price">15500 Р.</p>
+      <div class="catalog-card-hover">
+        <button class="card-buy__btn" type="button">Купить</button>
+        <button class="card-bookmarks__btn" type="button">В закладки</button>
+      </div>
+    </li>
+    <li class="card">
+      <img src="img/drill-3000.png" alt="Перфоратор BOSCH BFG 3000">
+      <h3 class="card-description">Перфоратор BOSCH BFG 3000</h3>
+      <p class="card-price-old">22500 Р.</p>
+      <p class="card-price">15500 Р.</p>
+        <div class="catalog-card-hover">
+          <button class="card-buy__btn" type="button">Купить</button>
+          <button class="card-bookmarks__btn" type="button">В закладки</button>
+        </div>
+    </li>
+    <li class="card">
+      <img src="img/drill-6000.png" alt="Перфоратор BOSCH BFG 6000">
+      <h3 class="card-description">Перфоратор BOSCH BFG 6000</h3>
+      <p class="card-price-old">30500 Р.</p>
+      <p class="card-price">25500 Р.</p>
+      <div class="catalog-card-hover">
+        <button class="card-buy__btn" type="button">Купить</button>
+        <button class="card-bookmarks__btn" type="button">В закладки</button>
+      </div>
+    </li>
+    <li class="card">
+      <img src="img/drill-2000.png" alt="Перфоратор BOSCH BFG 2000">
+      <h3 class="card-description">Перфоратор BOSCH BFG 2000</h3>
+      <p class="card-price-old"></p>
+      <p class="card-price">15500 Р.</p>
+      <div class="catalog-card-hover">
+        <button class="card-buy__btn" type="button">Купить</button>
+        <button class="card-bookmarks__btn" type="button">В закладки</button>
+      </div>
+    </li>
+  </ul>
+</section>
+<div class="paginator">
+  <a class="page-button page_active__link" href="#">1</a>
+  <a class="page-button page__link" href="#">2</a>
+  <a class="page-button page__link" href="#">3</a>
+  <a class="page-next-button page__link" href="#">Следующая</a>
+</div>
+</div>
+
+</div>
+
+    </main>
   </body>
 </html>
