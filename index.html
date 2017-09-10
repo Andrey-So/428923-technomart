@@ -306,7 +306,7 @@
         </section>
       </div>
     </footer>
-    <div class="popup popup-about popup-about-invisible">
+    <div class="popup popup-about popup-invisible">
       <form class="popup-about-form">
         <div class="popup-about-container">
           <label class="popup-name__label" for="popup-name">Ваше имя:</label>
@@ -322,19 +322,37 @@
         </div>
       </form>
     </div>
+    <div class="popup popup-map popup-invisible">
+      <img src="img/map-big.jpg">
+      <button class="popup-map-close" type="button">Закрыть</button>
+    </div>
     <script>
-      var link = document.querySelector(".contacts-button");
-      var popup = document.querySelector(".popup-about");
-      var close = popup.querySelector(".popup-about-close");
+      var aboutlink = document.querySelector(".contacts-button");
+      var aboutpopup = document.querySelector(".popup-about");
+      var aboutclose = aboutpopup.querySelector(".popup-about-close");
 
-      link.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.remove("popup-about-invisible")
-      })
+      var maplink = document.querySelector(".services-contacts img");
+      var mappopup = document.querySelector(".popup-map");
+      var mapclose = mappopup.querySelector(".popup-map-close");
 
-      close.addEventListener("click", function(evt) {
+      aboutlink.addEventListener("click", function(evt) {
         evt.preventDefault();
-        popup.classList.add("popup-about-invisible")            
+        aboutpopup.classList.remove("popup-invisible")
+      });
+
+      aboutclose.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        aboutpopup.classList.add("popup-invisible")
+      });
+
+      maplink.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        mappopup.classList.remove("popup-invisible");
+      });
+
+      mapclose.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        mappopup.classList.add("popup-invisible");
       })
     </script>
   </body>

@@ -624,13 +624,17 @@ input[type="radio"].visually-hidden {
 }
 
 .card-on-hover {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 0px;
   left: 0px;
   height: 180px;
   width: 100%;
   background-color: #ffffff;
+}
+
+.card:hover .card-on-hover {
+  display: block;
 }
 
 .buy__btn {
@@ -940,6 +944,7 @@ input[type="radio"].visually-hidden {
 
 .services-contacts img {
   margin-top: 9px;
+  cursor: pointer;
 }
 
 .contacts-button {
@@ -1605,16 +1610,16 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   position: fixed;
   bottom: 201px;
-  left: 383px;
+  left: 33.7%;
   width: 620px;
   height: 423px;
   background-color: #ffffff;
   border-top: 7px solid #ff5257;
-  box-shadow: 0 10px 40px 10px rgba(0 ,0 ,0 , .5);
+  box-shadow: 0 10px 40px 10px rgba(0, 0, 0, .5);
   z-index: 2;
 }
 
-.popup-about-invisible {
+.popup-invisible {
   display: none;
 }
 
@@ -1635,7 +1640,8 @@ input[type="radio"].visually-hidden {
   background-color: #f4f4f4;
 }
 
-.popup-about-close {
+.popup-about-close,
+.popup-map-close {
   position: absolute;
   top: 9px;
   right: 9px;
@@ -1643,7 +1649,7 @@ input[type="radio"].visually-hidden {
   height: 21px;
   width: 21px;
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
   background-image: url("../img/close.png");
   cursor: pointer;
 }
@@ -1685,6 +1691,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   padding: 0;
   padding-bottom: 2px;
+  padding-left: 13px;
 }
 
 .popup-name__input {
@@ -1695,7 +1702,6 @@ input[type="radio"].visually-hidden {
 .popup-name__input::-webkit-input-placeholder,
 .popup-email__input::-webkit-input-placeholder {
   color: #a9a9a9;
-  padding-left: 13px;
 }
 
 .popup-text__label {
@@ -1718,4 +1724,15 @@ input[type="radio"].visually-hidden {
 
 .popup-text__input::-webkit-input-placeholder {
   color: #a9a9a9;
+}
+
+.popup-map {
+
+  width: 940px;
+  min-height: 446px;
+  position: absolute;
+  top: 2348px;
+  left: 25.35%;
+  box-shadow: 0 10px 40px 10px rgba(0, 0, 0, .5);
+  z-index: 2;
 }
