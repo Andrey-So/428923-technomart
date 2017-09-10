@@ -1609,10 +1609,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   position: fixed;
-  bottom: 201px;
-  left: 33.7%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 620px;
-  height: 423px;
   background-color: #ffffff;
   border-top: 7px solid #ff5257;
   box-shadow: 0 10px 40px 10px rgba(0, 0, 0, .5);
@@ -1626,6 +1626,7 @@ input[type="radio"].visually-hidden {
 .popup-about-container {
   width: 460px;
   margin-top: 45px;
+  padding-bottom: 149px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1641,7 +1642,8 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-about-close,
-.popup-map-close {
+.popup-map-close,
+.popup-basket-close {
   position: absolute;
   top: 9px;
   right: 9px;
@@ -1727,12 +1729,83 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-map {
-
   width: 940px;
-  min-height: 446px;
-  position: absolute;
-  top: 2348px;
-  left: 25.35%;
+  height: 446px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -71%);
   box-shadow: 0 10px 40px 10px rgba(0, 0, 0, .5);
   z-index: 2;
+}
+
+.popup-basket {
+  position: fixed;
+  width: 620px;
+  border-top: 7px solid #ff5257;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 40px 10px rgba(0, 0, 0, .5);
+}
+
+.basket-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 54px;
+  height: 163px;
+  background-color: #ffffff;
+}
+
+.basket-header::before {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/form-1.svg);
+  background-repeat: no-repeat;
+}
+
+.basket-header h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.basket-buttons {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-button,
+.continue-button {
+  width: 220px;
+  height: 38px;
+  padding: 0;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  padding-top: 1px;
+  cursor: pointer;
+  background-color: #ee3643;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  border: none;
+  margin-top: 37px;
+  margin-bottom: 37px;
+  cursor: pointer;
+}
+
+.continue-button {
+  margin-left: 20px;
+  background-color: #ffffff;
+  color: #000000
 }

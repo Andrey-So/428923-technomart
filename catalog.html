@@ -283,5 +283,38 @@
         </section>
       </div>
     </footer>
+    <div class="popup popup-basket popup-invisible">
+      <div class="basket-header">
+        <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="basket-buttons">
+        <button class="checkout-button">Оформить заказ</button>
+        <button class="continue-button js-close">Продолжить покупки</button>
+      </div>
+      <button class="popup-basket-close js-close" type="button">Закрыть</button>
+    </div>
+  <script>
+    var basketlink = [].slice.call(document.querySelectorAll(".buy__btn"));
+    var basketpopup = document.querySelector(".popup-basket");
+    var basketclose = [].slice.call(basketpopup.querySelectorAll(".js-close"));
+    console.log("Запуск");
+
+    basketlink.forEach(function(btn) {
+      btn.addEventListener("click", function(evt) {
+        console.log("Клик");
+        evt.preventDefault();
+        basketpopup.classList.remove("popup-invisible");
+    });
+    });
+
+    basketclose.forEach(function(btn) {
+      btn.addEventListener("click", function(evt) {
+        console.log("Закрыть");
+        evt.preventDefault();
+        basketpopup.classList.add("popup-invisible");
+      });
+    });
+
+  </script>
   </body>
 </html>
