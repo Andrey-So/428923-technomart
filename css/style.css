@@ -278,6 +278,7 @@ input[type="radio"].visually-hidden {
   left: 14px;
   top: 14px;
   background-image: url(../img/icon-login.svg);
+  fill: #eeffaa;
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
