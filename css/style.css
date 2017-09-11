@@ -1225,6 +1225,16 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
+.orders-cabinet:hover,
+.cabinet-link:hover {
+  color: #ee3643;
+}
+
+.orders-cabinet:active,
+.cabinet-link:active {
+  color: #b7bfc8;
+}
+
 .breadcrumbs {
   display: flex;
   height: 59px;
@@ -1423,6 +1433,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
+  background-color: #ffffff;
+  text-transform: uppercase;
 }
 
 .page-button:hover {
@@ -1441,7 +1453,6 @@ input[type="radio"].visually-hidden {
 
 .next-page {
   width: 140px;
-  text-transform: uppercase;
 }
 
 .catalog-article {
@@ -1555,11 +1566,6 @@ input[type="radio"].visually-hidden {
 .filter-button {
   width: 140px;
   height: 38px;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  background-color: #ffffff;
-  font-family: "PT Sans", sans-serif;
-  font-size: 13px;
   text-transform: uppercase;
   margin-top: 78px;
   cursor: pointer;
