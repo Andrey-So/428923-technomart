@@ -71,6 +71,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
   margin-top: 46px;
   width: 320px;
+  position: relative;
 }
 
 .title-logo {
@@ -267,10 +268,20 @@ input[type="radio"].visually-hidden {
   width: 74px;
   margin-right: 10px;
   padding-left: 47px;
-  position: relative;
+  /*position: relative;*/
 }
 
-.sign-in__btn::before {
+.sign-in__icon {
+  position: absolute;
+  left: 53px;
+  top: 14px;
+}
+
+.sign-in__icon:hover path {
+  fill: #32425c;
+}
+
+/*.sign-in__btn::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -278,11 +289,10 @@ input[type="radio"].visually-hidden {
   left: 14px;
   top: 14px;
   background-image: url(../img/icon-login.svg);
-  fill: #eeffaa;
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
-}
+}*/
 
 .sign-up__btn {
   width: 150px;
@@ -623,6 +633,11 @@ input[type="radio"].visually-hidden {
 
 .card:hover .card-on-hover {
   display: block;
+}
+
+.card:hover {
+  border-color: transparent;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
 }
 
 .buy__btn {
