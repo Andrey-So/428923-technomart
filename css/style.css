@@ -268,7 +268,6 @@ input[type="radio"].visually-hidden {
   width: 74px;
   margin-right: 10px;
   padding-left: 47px;
-  /*position: relative;*/
 }
 
 .sign-in__icon {
@@ -277,22 +276,9 @@ input[type="radio"].visually-hidden {
   top: 14px;
 }
 
-.sign-in__icon:hover path {
+.sign-in__btn:hover .sign-in__icon path {
   fill: #32425c;
 }
-
-/*.sign-in__btn::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 14px;
-  top: 14px;
-  background-image: url(../img/icon-login.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.3;
-}*/
 
 .sign-up__btn {
   width: 150px;
