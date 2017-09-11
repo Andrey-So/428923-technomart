@@ -1146,6 +1146,15 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 
+.basket-full:hover {
+  background-color: #ca2c37;
+}
+
+.basket-full:active {
+  background-color: #9a212a;
+  opacity: 1;
+}
+
 .header-user-menu {
   display: flex;
   flex-direction: column;
