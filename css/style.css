@@ -1167,15 +1167,15 @@ input[type="radio"].visually-hidden {
 }
 
 /*Разметка страницы каталога*/
-.basket-full {
+.button-not-empty {
   background-color: #ee3643;
 }
 
-.basket-full:hover {
+.button-not-empty:hover {
   background-color: #ca2c37;
 }
 
-.basket-full:active {
+.button-not-emptyl:active {
   background-color: #9a212a;
   opacity: 1;
 }
@@ -1732,6 +1732,7 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   background-image: url("../img/close.png");
   cursor: pointer;
+  z-index: 3;
 }
 
 .popup-submit {
@@ -1814,7 +1815,21 @@ input[type="radio"].visually-hidden {
   left: 50%;
   transform: translate(-50%, -71%);
   box-shadow: 0 10px 40px 10px rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+
+.popup-map iframe {
+  position: relative;
+  border: none;
   z-index: 2;
+}
+
+.popup-map p {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .popup-basket {
