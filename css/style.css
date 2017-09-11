@@ -114,6 +114,28 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.search__form {
+  position: relative;
+}
+
+.search__image {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+}
+
+.search__image path {
+  fill: #6a7180;
+}
+
+.search__form:hover .search__image path {
+  fill: #ffffff;
+}
+
+.search__input:focus .search__image path {
+  fill: #ee3643;
+}
+
 .search__input {
   height: 42px;
   width: 270px;
@@ -122,9 +144,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #ffffff;
   background-color: #293449;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 17px center;
   border: none;
   padding-left: 48px;
 }
@@ -229,15 +248,15 @@ input[type="radio"].visually-hidden {
 }
 
 .header-phone::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 12px;
-    top: 10px;
-    background-image: url(../img/icon-phone.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .header-address {
@@ -268,7 +287,6 @@ input[type="radio"].visually-hidden {
   width: 74px;
   margin-right: 10px;
   padding-left: 47px;
-  /*position: relative;*/
 }
 
 .sign-in__icon {
@@ -277,22 +295,9 @@ input[type="radio"].visually-hidden {
   top: 14px;
 }
 
-.sign-in__icon:hover path {
+.sign-in__btn:hover .sign-in__icon path {
   fill: #32425c;
 }
-
-/*.sign-in__btn::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 14px;
-  top: 14px;
-  background-image: url(../img/icon-login.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.3;
-}*/
 
 .sign-up__btn {
   width: 150px;
@@ -1196,15 +1201,14 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.account::before {
+.account__image {
   position: absolute;
-  content: "";
-  width: 20px;
-  height: 18px;
   top: 13px;
   left: 14px;
-  background-image: url("../img/icon-user.svg");
-  background-repeat: no-repeat;
+}
+
+.account:hover .account__image path {
+  fill: #32425c;
 }
 
 .logout {
@@ -1216,15 +1220,14 @@ input[type="radio"].visually-hidden {
   font-size: 0;
 }
 
-.logout::before {
+.logout__image {
   position: absolute;
-  content: "";
-  width: 20px;
-  height: 17px;
   top: 14px;
-  right: 11px;
-  background-image: url("../img/icon-logout.svg");
-  background-repeat: no-repeat;
+  right: 10px;
+}
+
+.logout:hover .logout__image path {
+  fill: #32425c;
 }
 
 .orders-cabinet {
