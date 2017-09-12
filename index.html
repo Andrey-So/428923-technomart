@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>Техномарт - Главная</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -349,140 +349,6 @@
       </div>
       <button class="popup-basket-close js-close" type="button">Закрыть</button>
     </div>
-    <script>
-      var aboutlink = document.querySelector(".contacts-button");
-      var aboutpopup = document.querySelector(".popup-about");
-      var aboutclose = aboutpopup.querySelector(".popup-about-close");
-
-      var maplink = document.querySelector(".services-contacts img");
-      var mappopup = document.querySelector(".popup-map");
-      var mapclose = mappopup.querySelector(".popup-map-close");
-
-      var basketlink = [].slice.call(document.querySelectorAll(".buy__btn"));
-      var basketpopup = document.querySelector(".popup-basket");
-      var basketclose = [].slice.call(basketpopup.querySelectorAll(".js-close"));
-      var login = aboutpopup.querySelector("[name=popup-name]");
-
-      var basket = document.querySelector(".basket");
-      var bookmarkslink = [].slice.call(document.querySelectorAll(".bookmarks__btn"));
-      var bookmarks = document.querySelector(".bookmarks");
-
-      var sliderPrev = [].slice.call(document.querySelectorAll(".slider-prev"));
-      var sliderNext = [].slice.call(document.querySelectorAll(".slider-next"));
-      var prevCircleCenter = document.querySelector(".prev-circle-center");
-      var nextCircleCenter = document.querySelector(".next-circle-center");
-      var firstSlide = document.querySelector(".first-slide");
-      var secondSlide = document.querySelector(".second-slide");
-
-      var firstMenuItem = document.querySelector(".services-menu li:first-child a");
-      var secondMenuItem = document.querySelector(".services-menu li:nth-child(2) a");
-      var thirdMenuItem = document.querySelector(".services-menu li:last-child a");
-
-      var firstServiceBanner = document.querySelector(".service-delivery");
-      var secondServiceBanner = document.querySelector(".service-guarantee");
-      var thirdServiceBannser = document.querySelector(".service-credit");
-
-      aboutlink.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        aboutpopup.classList.remove("popup-invisible");
-        login.focus();
-      });
-
-      aboutclose.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        aboutpopup.classList.add("popup-invisible");
-      });
-
-      maplink.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        mappopup.classList.remove("popup-invisible");
-      });
-
-      mapclose.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        mappopup.classList.add("popup-invisible");
-      });
-
-      basketlink.forEach(function(btn) {
-        btn.addEventListener("click", function(evt) {
-          console.log("Купить");
-          evt.preventDefault();
-          basketpopup.classList.remove("popup-invisible");
-          basket.classList.add("button-not-empty");
-      });
-    });
-
-      basketclose.forEach(function(btn) {
-        btn.addEventListener("click", function(evt) {
-          console.log("Закрыть");
-          evt.preventDefault();
-          basketpopup.classList.add("popup-invisible");
-        });
-      });
-
-      bookmarkslink.forEach(function(btn) {
-        btn.addEventListener("click", function(evt) {
-        console.log("Закладка");
-        evt.preventDefault();
-        bookmarks.classList.add("button-not-empty");
-      });
-    });
-
-    sliderPrev.forEach(function(btn) {
-      btn.addEventListener("click", function(evt) {
-        console.log("sliderPrev");
-        evt.preventDefault();
-        firstSlide.classList.remove("visually-hidden");
-        secondSlide.classList.add("visually-hidden");
-        prevCircleCenter.classList.add("circle-active");
-        nextCircleCenter.classList.remove("circle-active");
-      });
-    });
-
-    sliderNext.forEach(function(btn) {
-      btn.addEventListener("click", function(evt) {
-        console.log("sliderNext");
-        evt.preventDefault();
-        firstSlide.classList.add("visually-hidden");
-        secondSlide.classList.remove("visually-hidden");
-        prevCircleCenter.classList.remove("circle-active");
-        nextCircleCenter.classList.add("circle-active");
-      });
-    });
-
-    firstMenuItem.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      console.log("Первый пункт меню");
-      firstMenuItem.classList.add("menu-active");
-      secondMenuItem.classList.remove("menu-active");
-      thirdMenuItem.classList.remove("menu-active");
-      firstServiceBanner.classList.remove("visually-hidden");
-      secondServiceBanner.classList.add("visually-hidden");
-      thirdServiceBannser.classList.add("visually-hidden");
-    });
-
-    secondMenuItem.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      console.log("Второй пункт меню");
-      firstMenuItem.classList.remove("menu-active");
-      secondMenuItem.classList.add("menu-active");
-      thirdMenuItem.classList.remove("menu-active");
-      firstServiceBanner.classList.add("visually-hidden");
-      secondServiceBanner.classList.remove("visually-hidden");
-      thirdServiceBannser.classList.add("visually-hidden");
-    });
-
-    thirdMenuItem.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      console.log("Третий пункт меню");
-      firstMenuItem.classList.remove("menu-active");
-      secondMenuItem.classList.remove("menu-active");
-      thirdMenuItem.classList.add("menu-active");
-      firstServiceBanner.classList.add("visually-hidden");
-      secondServiceBanner.classList.add("visually-hidden");
-      thirdServiceBannser.classList.remove("visually-hidden");
-    });
-
-    </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

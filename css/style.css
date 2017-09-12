@@ -412,7 +412,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 63px;
   left: 24px;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .banner__btn:hover {
@@ -1662,6 +1662,12 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   cursor: pointer;
   display: block;
+  opacity: 1;
+}
+
+.filter__label:hover::before,
+.power__label:hover::before {
+  opacity: 1;
 }
 
 .filter__label::before {
@@ -1673,6 +1679,7 @@ input[type="radio"].visually-hidden {
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+  opacity: 0.7;
 }
 
 #checkbox-1:checked~.filter__label[for=checkbox-1]::before,
@@ -1692,6 +1699,7 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
+  opacity: 0.7;
 }
 
 #battery:checked~.power__label[for=battery]::before,
