@@ -413,6 +413,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 63px;
   left: 24px;
+  vertical-align:middle;
 }
 
 .banner__btn:hover {
@@ -1010,6 +1011,7 @@ input[type="radio"].visually-hidden {
   padding-top: 16px;
   box-shadow: 0 5px 0 0 #b52933;
   flex-shrink: 0;
+  vertical-align: middle;
 }
 
 .footer-address {
@@ -1026,6 +1028,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   padding-left: 3px;
   padding-top: 4px;
+  vertical-align: middle;
 }
 
 .footer-menus {
@@ -1063,7 +1066,6 @@ input[type="radio"].visually-hidden {
 .footer-secondary-menu a,
 .footer-email a,
 .footer-developer a {
-  display: inline-block;
   color: #ffda96;
 }
 
@@ -1124,7 +1126,6 @@ input[type="radio"].visually-hidden {
 }
 
 .social a {
-  display: inline-block;
   margin: auto;
   width: 40px;
   height: 40px;
