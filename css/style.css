@@ -126,16 +126,12 @@ input[type="radio"].visually-hidden {
   left: 17px;
 }
 
-.search__icon-path {
+.search__icon {
   fill: #6a7180;
 }
 
-.search__form:hover .search__icon-path {
+.search__form:hover .search__icon {
   fill: #ffffff;
-}
-
-.search__input:focus .search__icon-path {
-  fill: #ee3643;
 }
 
 .search__input {
@@ -168,10 +164,13 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.search__input:focus
-{
+.search__input:focus {
   background-color: #ffffff;
   color: #000000;
+}
+
+.search__input:focus + .search__icon {
+  fill: #ee3643;
 }
 
 .bookmarks {
