@@ -844,6 +844,8 @@ input[type="radio"].visually-hidden {
 .menu-active {
   background-color: #ffffff;
   color: #32425c;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .services-banner {
