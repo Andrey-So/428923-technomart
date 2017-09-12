@@ -807,6 +807,15 @@ input[type="radio"].visually-hidden {
   font-size: 0;
 }
 
+.services-menu li {
+  /*height: 58px;*/
+}
+
+.services-menu a {
+  /*padding: 0;*/
+  /*margin: 0;*/
+}
+
 .services-menu::after {
     content: "";
     width: 10px;
@@ -844,6 +853,8 @@ input[type="radio"].visually-hidden {
 .menu-active {
   background-color: #ffffff;
   color: #32425c;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .services-banner {
