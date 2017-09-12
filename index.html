@@ -15,7 +15,9 @@
           <h1 class="title-logo">Техномарт</h1>
           <form class="search__form" action="#" method="get">
             <input class="search__input" type="search" placeholder="Поиск:">
-            <svg class="search__image" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+            <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+              <path class="search__icon-path" fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+            </svg>
           </form>
           <a class="bookmarks" href="#">Закладки: 0</a>
           <a class="basket" href="#">Корзина: 0</a>
@@ -32,8 +34,8 @@
           <div class="header-login">
             <a class="sign__btn sign-in__btn" href="#">Войти
             <svg class="sign-in__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
-              <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
-              <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+              <path class="sign-in__icon-path" fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+              <path class="sign-in__icon-path" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
               </a>
             <a class="sign__btn sign-up__btn" href="#">Регистрация</a>
           </div>
@@ -78,13 +80,13 @@
         <div class="slider-vertical-banners">
           <section class="sliders">
             <div class="slider-items">
-              <div class="slider-item">
+              <div class="slider-item first-slide">
                 <img src="img/slider1.jpg" alt="Перфоратор" width="620" height="266">
                 <h3 class="slider-item__hdr">Перфораторы</h3>
                 <p class="slider-item__txt">Настоящие мужские игрушки</p>
                 <a class="main-button slider-button" href="catalog.html">Открыть каталог</a>
               </div>
-              <div class="slider-item visually-hidden">
+              <div class="slider-item second-slide visually-hidden">
                 <img src="img/slider2.jpg" alt="Дрель" width="620" height="266">
                 <h3 class="slider-item__hdr">Дрели</h3>
                 <p class="slider-item__txt">Соседям на радость</p>
@@ -92,19 +94,20 @@
               </div>
             </div>
             <div class="slider-arrows">
-              <button type="button" class="slider-nav-arrow slider-nav-arrow-prev">Назад</button>
-              <button type="button" class="slider-nav-arrow slider-nav-arrow-next">Вперед</button>
+              <button type="button" class="slider-nav-arrow slider-prev">Назад</button>
+              <button type="button" class="slider-nav-arrow slider-next">Вперед</button>
             </div>
             <div class="slider-nav">
-              <button type="button" class="slider-nav__btn slider-nav-active">
+              <button type="button" class="slider-nav__btn slider-prev slider-nav-active">
                 <svg>
-                  <circle r="5" cx="7" cy="7" fill="white"/>
-                  <circle r="3" cx="7" cy="7" fill="#ee3643"/>
+                  <circle r="5" cx="7" cy="7" fill="#ffffff"/>
+                  <circle class="prev-circle-center circle-active" r="3" cx="7" cy="7" fill="#ffffff"/>
                 </svg>
               </button>
-              <button type="button" class="slider-nav__btn">
+              <button type="button" class="slider-nav__btn slider-next">
                 <svg>
-                  <circle r="5" cx="8" cy="7" fill="white"/>
+                  <circle r="5" cx="8" cy="7" fill="#ffffff"/>
+                  <circle class="next-circle-center" r="3" cx="8" cy="7" fill="#ffffff"/>
                 </svg>
               </button>
             </div>
@@ -216,7 +219,7 @@
               <li><a class="menu-item" href="#">Гарантия</a></li>
               <li><a class="menu-item" href="#">Кредит</a></li>
             </ul>
-            <div class="services-banner service-delivery">
+            <div class="services-banner service-delivery visually-hidden">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!</p>
@@ -224,13 +227,13 @@
                 поднимая его на ваш этаж!</p>
               <img src="img/banner-delivery.jpg" alt="Доставка" width="468" height="261">
             </div>
-            <div class="services-banner service-guarantee visually-hidden">
+            <div class="services-banner service-guarantee">
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит,<br>
-                а также в случае пожара, спровоцированного его возгаранием,<br>
-                вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
+                а также в случае пожара, спровоцированного его возгаранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем
                 сгоревший товар на новый.<br>
-                Дом уж восстановите как-нибудь сами/</p>
+                Дом уж восстановите как-нибудь сами.</p>
               <img src="img/banner-guarantee.jpg" alt="Гарантия" width="389" height="283">
             </div>
             <div class="services-banner service-credit visually-hidden">
@@ -246,8 +249,9 @@
       <section class="container about-and-contacts">
         <div class="about">
           <h2 class="main-title">Компания «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдалённые точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
+          <p class="article-paragraph margin-paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="article-paragraph margin-paragraph">Мы можем доставить ваш товар в самые отдалённые точки России!</p>
+          <p class="article-paragraph">Техномарт работает со многими транспортными компаниями:</p>
           <ul class="list-delivery">
             <li class="delivery-company">Деловые линии</li>
             <li class="delivery-company">Автотрейдинг</li>
@@ -257,9 +261,11 @@
         </div>
         <div class="services-contacts">
           <h2 class="main-title">Контакты</h2>
-          <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-          <img src="img/about-map.jpg " alt="Карта проезда" width="300" height="158">
-          <a class="main-button contacts-button" href="#">Заблудились? Напишите нам!</a>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <a class="contacts-cart-link" href="cart.html">
+            <img src="img/about-map.jpg " alt="Карта проезда" width="300" height="158">
+          </a>
+          <a class="main-button contacts-button" href="form.html">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
@@ -411,6 +417,13 @@
       var bookmarkslink = [].slice.call(document.querySelectorAll(".bookmarks__btn"));
       var bookmarks = document.querySelector(".bookmarks");
 
+      var sliderPrev = [].slice.call(document.querySelectorAll(".slider-prev"));
+      var sliderNext = [].slice.call(document.querySelectorAll(".slider-next"));
+      var prevCircleCenter = document.querySelector(".prev-circle-center");
+      var nextCircleCenter = document.querySelector(".next-circle-center");
+      var firstSlide = document.querySelector(".first-slide");
+      var secondSlide = document.querySelector(".second-slide");
+
       aboutlink.addEventListener("click", function(evt) {
         evt.preventDefault();
         aboutpopup.classList.remove("popup-invisible");
@@ -456,6 +469,29 @@
         bookmarks.classList.add("button-not-empty");
       });
     });
+
+    sliderPrev.forEach(function(btn) {
+      btn.addEventListener("click", function(evt) {
+        console.log("sliderPrev");
+        evt.preventDefault();
+        firstSlide.classList.remove("visually-hidden");
+        secondSlide.classList.add("visually-hidden");
+        prevCircleCenter.classList.add("circle-active");
+        nextCircleCenter.classList.remove("circle-active");
+      });
+    });
+
+    sliderNext.forEach(function(btn) {
+      btn.addEventListener("click", function(evt) {
+        console.log("sliderNext");
+        evt.preventDefault();
+        firstSlide.classList.add("visually-hidden");
+        secondSlide.classList.remove("visually-hidden");
+        prevCircleCenter.classList.remove("circle-active");
+        nextCircleCenter.classList.add("circle-active");
+      });
+    });
+
     </script>
   </body>
 </html>
