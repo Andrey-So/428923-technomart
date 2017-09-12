@@ -807,6 +807,15 @@ input[type="radio"].visually-hidden {
   font-size: 0;
 }
 
+.services-menu li {
+  /*height: 58px;*/
+}
+
+.services-menu a {
+  /*padding: 0;*/
+  /*margin: 0;*/
+}
+
 .services-menu::after {
     content: "";
     width: 10px;
