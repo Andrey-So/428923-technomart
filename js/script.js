@@ -25,8 +25,8 @@ var bookmarks = document.querySelector(".bookmarks");
 
 var sliderPrev = [].slice.call(document.querySelectorAll(".slider-prev"));
 var sliderNext = [].slice.call(document.querySelectorAll(".slider-next"));
-var prevCircleCenter = document.querySelector(".prev-circle-center");
-var nextCircleCenter = document.querySelector(".next-circle-center");
+var buttonPrev = document.querySelector(".slider-nav__btn.slider-prev");
+var buttonNext = document.querySelector(".slider-nav__btn.slider-next");
 var firstSlide = document.querySelector(".first-slide");
 var secondSlide = document.querySelector(".second-slide");
 
@@ -94,11 +94,12 @@ bookmarkslink.forEach(function(btn) {
 
 sliderPrev.forEach(function(btn) {
   btn.addEventListener("click", function(evt) {
+    console.log("sliderprev");
     evt.preventDefault();
     firstSlide.classList.remove("visually-hidden");
     secondSlide.classList.add("visually-hidden");
-    prevCircleCenter.classList.add("circle-active");
-    nextCircleCenter.classList.remove("circle-active");
+    buttonPrev.classList.add("slider-nav-active");
+    buttonNext.classList.remove("slider-nav-active");
   });
 });
 
@@ -107,8 +108,8 @@ sliderNext.forEach(function(btn) {
     evt.preventDefault();
     firstSlide.classList.add("visually-hidden");
     secondSlide.classList.remove("visually-hidden");
-    prevCircleCenter.classList.remove("circle-active");
-    nextCircleCenter.classList.add("circle-active");
+    buttonPrev.classList.remove("slider-nav-active");
+    buttonNext.classList.add("slider-nav-active");
   });
 });
 

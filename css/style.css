@@ -506,25 +506,24 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-nav__btn {
-  bottom: 34px;
-  left: 306px;
+  padding: 0;
+  bottom: 40px;
+  left: 315px;
   position: absolute;
-  background-color: transparent;
-  border: 0;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
   cursor: pointer;
-}
-
-.slider-nav__btn svg {
-  width: 13px;
-  height: 13px;
+  background-color: #ffffff;
 }
 
 .slider-prev {
-  left: 287px;
+  left: 295px;
 }
 
-.circle-active {
-  fill: #ee3643;
+.slider-nav-active {
+  background-color: #ee3643;
 }
 
 .main-button {
@@ -805,15 +804,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   font-size: 0;
-}
-
-.services-menu li {
-  /*height: 58px;*/
-}
-
-.services-menu a {
-  /*padding: 0;*/
-  /*margin: 0;*/
 }
 
 .services-menu::after {
