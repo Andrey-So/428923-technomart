@@ -1266,7 +1266,7 @@ input[type="radio"].visually-hidden {
   width: 4px;
   height: 5px;
   top: 7px;
-  left: 108px;
+  right: 133px;
   background-image: url("../img/icon-orders.png");
 }
 
