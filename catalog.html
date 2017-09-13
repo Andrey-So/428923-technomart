@@ -79,7 +79,7 @@
       <div class="catalog container">
         <section class="filter">
           <h2 class="filter__hdr">Фильтр:</h2>
-          <form class="filter">
+          <form class="filter" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-price">
               <legend class="filter__legend">Цена:</legend>
               <div class="filter-price__range">
@@ -98,11 +98,11 @@
             <div class="delimeter"></div>
             <fieldset class="filter-manufacturer">
               <legend class="filter__legend">Производители:</legend>
-              <input class="visually-hidden" type="checkbox" name="checkbox-1" id="checkbox-1" checked>
-              <input class="visually-hidden" type="checkbox" name="checkbox-2" id="checkbox-2">
-              <input class="visually-hidden" type="checkbox" name="checkbox-3" id="checkbox-3" checked>
-              <input class="visually-hidden" type="checkbox" name="checkbox-4" id="checkbox-4">
-              <input class="visually-hidden" type="checkbox" name="checkbox-5" id="checkbox-5">
+              <input class="visually-hidden" type="checkbox" name="checkbox-1" value="Bosch" id="checkbox-1" checked>
+              <input class="visually-hidden" type="checkbox" name="checkbox-2" value="Интерскол" id="checkbox-2">
+              <input class="visually-hidden" type="checkbox" name="checkbox-3" value="Makita" id="checkbox-3" checked>
+              <input class="visually-hidden" type="checkbox" name="checkbox-4" value="Dewalt" id="checkbox-4">
+              <input class="visually-hidden" type="checkbox" name="checkbox-5" value="Hitachi" id="checkbox-5">
               <label class="filter__label" for="checkbox-1">Bosch</label>
               <label class="filter__label" for="checkbox-2">Интерскол</label>
               <label class="filter__label" for="checkbox-3">Makita</label>
@@ -112,8 +112,8 @@
             <div class="delimeter"></div>
             <fieldset class="filter-power">
               <legend class="filter__legend">Питание:</legend>
-              <input class="visually-hidden" type="radio" checked name="power" id="battery">
-              <input class="visually-hidden" type="radio" name="power" id="power">
+              <input class="visually-hidden" type="radio" name="power" value="battery" id="battery" checked>
+              <input class="visually-hidden" type="radio" name="power" value="power" id="power">
               <label class="power__label" for="battery">Аккумуляторные</label>
               <label class="power__label" for="power">Сетевые</label>
             </fieldset>
